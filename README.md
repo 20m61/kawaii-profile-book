@@ -1,84 +1,72 @@
-# Turborepo starter
+# kawaii-profile-book
 
-This Turborepo starter is maintained by the Turborepo core team.
+**かわいくて、たのしくて、魔法みたいなプロフィール帳。**  
+魔女カワとおしゃべりしながら、ときめく自分だけのプロフページや会員証、  
+シール帳を作って、お友達と交換＆交流できるWebアプリです！
 
-## Using this example
+---
 
-Run the following command:
+## ✨ なにができるの？
 
-```sh
-npx create-turbo@latest
-```
+- 魔女カワとのチャットで自分のプロフィールを作成
+- 顔写真をかわいくデコって、鬼カワ会員証を自動生成
+- NFCやカメラで「かざすだけ」で本人認証！
+- スマホからはサイン帳・シール帳が使えるよ
+- お友達と“かわいい”を交換してもっと仲良くなれる！
 
-## What's inside?
+---
 
-This Turborepo includes the following packages/apps:
+## 📱 想定ユーザー
 
-### Apps and Packages
+- 10〜20代のかわいいUIやデコ体験が大好きな女の子たち
+- 本物のサイン帳みたいな体験をスマホで楽しみたい子
+- 魔法・AI・シール・自己紹介が大好きなあなた！
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+---
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+## 🛠 使用技術スタック
 
-### Utilities
+| 分野 | 技術 |
+|------|------|
+| フロント | Next.js (App Router), React, Tailwind CSS |
+| バックエンド | AWS Lambda, API Gateway, CDK |
+| 会話AI | Dify（Claude/GPTなど） |
+| 画像生成・特徴量 | Stable Diffusion, CLIP |
+| 音声認識/合成 | Web Speech API, Amazon Polly |
+| インフラ管理 | GitHub Actions, Turborepo, CDK |
+| 認証方式 | 画像認識（特徴量ベース）、NFC連携 |
 
-This Turborepo has some additional tools already setup for you:
+---
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+## 🚀 セットアップ手順
 
-### Build
+\`\`\`bash
+# 1. クローン
+git clone https://github.com/20m61/kawaii-profile-book.git
+cd kawaii-profile-book
 
-To build all apps and packages, run the following command:
+# 2. 依存インストール
+yarn install  # または npm install
 
-```
-cd my-turborepo
-pnpm build
-```
+# 3. 開発サーバ起動
+yarn dev --filter=web
+\`\`\`
 
-### Develop
+---
 
-To develop all apps and packages, run the following command:
+## 🌱 ライセンス・貢献
 
-```
-cd my-turborepo
-pnpm dev
-```
+- このリポジトリは MIT ライセンスです。
+- かわいい魔法を一緒に作りたいコントリビューター大歓迎！
+  - 詳しくは [`CONTRIBUTING.md`](./CONTRIBUTING.md) をご覧ください！
 
-### Remote Caching
+---
 
-> [!TIP]
-> Vercel Remote Cache is free for all plans. Get started today at [vercel.com](https://vercel.com/signup?/signup?utm_source=remote-cache-sdk&utm_campaign=free_remote_cache).
+## ✉️ お問い合わせ
 
-Turborepo can use a technique known as [Remote Caching](https://turborepo.com/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
+プロジェクトに関するご質問やコラボのご相談は  
+[GitHub Issues](https://github.com/20m61/kawaii-profile-book/issues) にてご連絡ください。
 
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup?utm_source=turborepo-examples), then enter the following commands:
+---
 
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turborepo.com/docs/crafting-your-repository/running-tasks)
-- [Caching](https://turborepo.com/docs/crafting-your-repository/caching)
-- [Remote Caching](https://turborepo.com/docs/core-concepts/remote-caching)
-- [Filtering](https://turborepo.com/docs/crafting-your-repository/running-tasks#using-filters)
-- [Configuration Options](https://turborepo.com/docs/reference/configuration)
-- [CLI Usage](https://turborepo.com/docs/reference/command-line-reference)
+> “自分だけのかわいい魔法”、一緒につくりませんか？
