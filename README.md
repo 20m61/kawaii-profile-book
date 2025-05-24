@@ -40,7 +40,7 @@
 
 ## 🚀 セットアップ手順
 
-\`\`\`bash
+```bash
 # 1. クローン
 git clone https://github.com/20m61/kawaii-profile-book.git
 cd kawaii-profile-book
@@ -50,7 +50,7 @@ yarn install  # または npm install
 
 # 3. 開発サーバ起動
 yarn dev --filter=web
-\`\`\`
+```
 
 ---
 
