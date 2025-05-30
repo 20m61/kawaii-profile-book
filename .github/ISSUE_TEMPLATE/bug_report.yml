@@ -1,0 +1,91 @@
+---
+name: bug-report
+description: Report a bug to help us improve
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Describe the bug
+        A clear and concise description of what the bug is.
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is.
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        ## To Reproduce
+        Steps to reproduce the behavior:
+  - type: textarea
+    id: reproduce-steps
+    attributes:
+      label: To Reproduce
+      description: Steps to reproduce the behavior (e.g. 1. Go to '...')
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        ## Expected behavior
+        A clear and concise description of what you expected to happen.
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        ## Screenshots
+        If applicable, add screenshots to help explain your problem.
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Add screenshots if applicable.
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: |
+        ## Environment (please complete the following information):
+  - type: input
+    id: environment-os
+    attributes:
+      label: OS
+      description: e.g. macOS, Windows
+    validations:
+      required: false
+  - type: input
+    id: environment-browser
+    attributes:
+      label: Browser
+      description: e.g. Chrome, Safari
+    validations:
+      required: false
+  - type: input
+    id: environment-version
+    attributes:
+      label: Version
+      description: e.g. 22
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: |
+        ## Additional context
+        Add any other context about the problem here.
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add any other context about the problem here.
+    validations:
+      required: false
