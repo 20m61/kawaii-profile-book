@@ -1,0 +1,7 @@
+# GitHub Copilot MCP 設定ファイル
+mcp:
+  enabled: true
+  allow:
+    - github
+    - public
+  deny: []
